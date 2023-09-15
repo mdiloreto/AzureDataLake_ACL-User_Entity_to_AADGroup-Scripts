@@ -1,15 +1,15 @@
 
 # Azure Data Lake Gen2 ACL Management Scripts
 
-00-Backup_ACL.ps1: This script backs up the current ACLs of a specified directory in Azure Data Lake Storage Gen2 to a CSV file.
+- `00-Backup_ACL.ps1`: This script backs up the current ACLs of a specified directory in Azure Data Lake Storage Gen2 to a CSV file.
 
-01-Get-ACL-directory.ps1: This script retrieves and prints the ACLs of a specified directory in Azure Data Lake Storage Gen2.
+- `01-Get-ACL-directory.ps1`: This script retrieves and prints the ACLs of a specified directory in Azure Data Lake Storage Gen2.
 
-02-ReplaceRecursivo_ACLentitys-with-ADSecGroup-v2.ps1: This script replaces the ACL entries of a specified directory in Azure Data Lake Storage Gen2 with a new ACL entry from an Azure AD security group.
+- `02-ReplaceRecursivo_ACLentitys-with-ADSecGroup-v2.ps1`: This script replaces the ACL entries of a specified directory in Azure Data Lake Storage Gen2 with a new ACL entry from an Azure AD security group.
 
-03-RollbackRecursivo-Grant-ACL-from-csv.ps1: This script adds ACL entries from a CSV file to a specified directory in Azure Data Lake Storage Gen2 and updates the ACLs recursively.
+- `03-RollbackRecursivo-Grant-ACL-from-csv.ps1`: This script adds ACL entries from a CSV file to a specified directory in Azure Data Lake Storage Gen2 and updates the ACLs recursively.
 
-XX-Grant-recursive-acl-permissions.ps1: This script grants recursive ACL permissions to a specified directory in Azure Data Lake Storage Gen2.
+- `XX-Grant-recursive-acl-permissions.ps1`: This script grants recursive ACL permissions to a specified directory in Azure Data Lake Storage Gen2.
 
 # AD Entitys recursive replacement with AAD Group 
 
