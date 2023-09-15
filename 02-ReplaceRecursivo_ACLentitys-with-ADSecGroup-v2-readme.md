@@ -1,4 +1,3 @@
-
 # Azure Data Lake Gen2 ACL Management Script
 
 This PowerShell script manages Access Control List (ACL) entries of a specified directory in an Azure Data Lake Storage Gen2 container. It backs up the old ACL entries to a CSV file, adds users to an Active Directory (AD) security group, removes old ACL entries, and grants permissions to the AD security group.
@@ -51,6 +50,3 @@ The script will return an error message and stop executing if any of the followi
 - Error removing the ACL recursively.
 - Error granting permissions to the AD security group.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
