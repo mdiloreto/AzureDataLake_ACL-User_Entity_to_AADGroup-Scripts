@@ -1,5 +1,17 @@
 
-# Azure Data Lake Gen2 ACL Management Script
+# Azure Data Lake Gen2 ACL Management Scripts
+
+00-Backup_ACL.ps1: This script backs up the current ACLs of a specified directory in Azure Data Lake Storage Gen2 to a CSV file.
+
+01-Get-ACL-directory.ps1: This script retrieves and prints the ACLs of a specified directory in Azure Data Lake Storage Gen2.
+
+02-ReplaceRecursivo_ACLentitys-with-ADSecGroup-v2.ps1: This script replaces the ACL entries of a specified directory in Azure Data Lake Storage Gen2 with a new ACL entry from an Azure AD security group.
+
+03-RollbackRecursivo-Grant-ACL-from-csv.ps1: This script adds ACL entries from a CSV file to a specified directory in Azure Data Lake Storage Gen2 and updates the ACLs recursively.
+
+XX-Grant-recursive-acl-permissions.ps1: This script grants recursive ACL permissions to a specified directory in Azure Data Lake Storage Gen2.
+
+# AD Entitys recursive replacement with AAD Group 
 
 This PowerShell script manages Access Control List (ACL) entries of a specified directory in an Azure Data Lake Storage Gen2 container. It backs up the old ACL entries to a CSV file, adds users to an Active Directory (AD) security group, removes old ACL entries, and grants permissions to the AD security group.
 
@@ -51,6 +63,4 @@ The script will return an error message and stop executing if any of the followi
 - Error removing the ACL recursively.
 - Error granting permissions to the AD security group.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
